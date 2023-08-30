@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="cfstyle.css">
+	<link rel="stylesheet" href=
+"https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity=
+"sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+		crossorigin="anonymous">
+	<script src="cfjava.js"></script>
+</head>
+
+<body onload="generate()">
+	
+		<div class="container">
+			<div class="form-title">
+				MEMBER LOGIN
+			</div>
+			<div class="form-input">
+				<label for="username">USERNAME</label>
+				<input type="text" id="username" placeholder="write your name"  name="user">
+				<label for="password">PASSWORD</label>
+				<input type="password" id="password" placeholder="please enter password"  name="pass">
+				
+	
+			</div>
+			<label for="study">HIGHEST EDUCATION :   </label>
+			<select class="edu" size="1">
+				<option>GRADUATION</option>
+				<option>POST-GRADUATION</option>
+				<option>10TH PASS</option>
+				<option>12TH PASS</option>
+			</select>
+			<label for="age" >DATE OF BIRTH</label>
+			<input class="age" type="date">
+			
+			<label for="color">FAVOURITE COLOR</label>
+			<input class="color" type="color">
+			<label for="img">UPLOAD YOUR IMAGE(MAX SIZE=5MB)</label>
+			<input class="img" type="file" name="file" accept=".jpg" size="5000000">
+    
+	<div id="user-input" class="test">
+		<input type="text" id="submit"
+			placeholder="Captcha code" />
+	</div>
+
+	<div class="test" onclick="generate()">
+		<i class="fas fa-sync"></i>
+	</div>
+
+	<div id="image" class="inline" selectable="False">
+	</div>
+	<input type="submit" id="btn" value="SUMBIT" onclick="printmsg()" />
+
+	<p id="key"></p>
+</div>
+
+
+
+</body>
+
+</html>
